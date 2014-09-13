@@ -5,7 +5,10 @@ function feelioRouteConfig($routeProvider, $locationProvider) {
   when ('/', {
     templateUrl: '/views/menu.html'
   }).
- when ('/', {
+ when ('/dashboard', {
+    templateUrl: '/views/dashboard.html'
+  }).
+ when ('/cashflow', {
     templateUrl: '/views/dashboard.html'
   }).
    otherwise ({
