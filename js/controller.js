@@ -3,7 +3,7 @@ var myAppModule = angular.module('profitly', ['ngRoute']);
 function feelioRouteConfig($routeProvider, $locationProvider) {
   $routeProvider.
   when ('/', {
-    templateUrl: '/views/home.html'
+    templateUrl: '/views/menu.html'
   }).
   otherwise ({
     redirectTo: '/'
