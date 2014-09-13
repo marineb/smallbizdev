@@ -12,7 +12,8 @@ a:hover {
 	color: #313c64 ;
 }
 
-button {
+
+.btn-primary {
 	background: #eb3156;
 	color: #fff;
 }
