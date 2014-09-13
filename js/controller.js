@@ -55,7 +55,7 @@ function feelioRouteConfig($routeProvider, $locationProvider) {
 //    }
 //  ];
 //  
-//}
+}
 
 myAppModule.controller('MainController', function($scope, $route, $routeParams, $location) {
      $scope.$route = $route;
