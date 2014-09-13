@@ -5,14 +5,55 @@ function feelioRouteConfig($routeProvider, $locationProvider) {
   when ('/', {
     templateUrl: '/views/menu.html'
   }).
- when ('/', {
+ when ('/dashboard', {
     templateUrl: '/views/dashboard.html'
+  }).
+ when ('/cashflow', {
+    aliases: ['cash'],
+    templateUrl: '/views/cashflow.html'
   }).
    otherwise ({
     redirectTo: '/'
   });
   
-  $locationProvider.html5Mode(true);  
+  //$locationProvider.html5Mode(true);
+  
+  
+  app.controller('userData', function(){
+    this.users = users;
+  });
+
+  var users = [
+    {
+      first: '',
+      last: '',
+      job: [{
+	work: 'Food Processing',
+	day: 'Sundays',
+	time: '8:30 PM',
+	week: 'C'
+      }],
+      shifts: [
+      {
+	time: '1401669000000',
+	status: 'default'
+      },
+      {
+	time: '1404088200000',
+	status: 'swap in progress'	
+      },
+      {
+	time: '1406507400000',
+	status: 'swapped'
+      }
+      ]
+    },
+    {
+      first: 'John',
+      last: 'Doe'
+    }
+  ];
+  
 }
 
 myAppModule.controller('MainController', function($scope, $route, $routeParams, $location) {
@@ -32,3 +73,7 @@ myAppModule.run(function ($rootScope, $location) {
       ga('send', 'pageview', $location.path());
     });
 });
+
+
+
+
