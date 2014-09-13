@@ -3,6 +3,39 @@ ul {
   padding: 0;
 }
 
-a {
+a {	
+	color: #fff;
   
+}
+
+a:hover {
+	color: #313c64 ;
+}
+
+button {
+	background: #eb3156;
+	color: #fff;
+}
+
+body {
+	background: #313c64;
+	color: #fff;
+	font-family: Helvetica;
+}
+
+#element {
+	background: #00c3ff
+
+}
+
+h1 {
+	font-size: 
+}
+
+h2 {
+
+}
+
+p{
+
 }

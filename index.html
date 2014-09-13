@@ -15,7 +15,9 @@
     
     <!--<base href="/" />-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/calendar.css">
     <link rel="stylesheet" href="css/main.css">
+
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/angular.min.js"></script>
     <script src="js/lib/angular-route.min.js"></script>
@@ -32,5 +34,13 @@
     
     <script src="js/lib/bootstrap.min.js"></script>
 
+    <script type="text/javascript">
+        var calendar = $("#calendar").calendar(
+            {
+                tmpl_path: "/tmpls/",
+                events_source: function () { return []; }
+            });         
+    </script>
+    
   </body>
 <html>
