@@ -5,13 +5,18 @@ ul {
 
 a {	
 	color: #fff;
-  
 }
 
 a:hover {
-	color: #313c64 ;
+	color: #313c64;
+	background: #313c64;
 }
 
+
+.btn, a:visited, a:active {
+	background: #eb3156;
+	color: #fff;
+}
 
 .btn-primary {
 	background: #eb3156;
@@ -22,21 +27,22 @@ body {
 	background: #313c64;
 	color: #fff;
 	font-family: Helvetica;
+	padding: 0;
 }
 
-#element {
-	background: #00c3ff
-
+.element {
+	background: #00c3ff;
+	padding: 5%;
 }
 
-h1 {
-	font-size: 
+.footer {
+	position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;
 }
 
-h2 {
-
-}
-
-p{
-
+li {
+	background: black;
+	height: 50px;
 }
