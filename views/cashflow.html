@@ -5,9 +5,74 @@
     <h4>Overview</h4>
     This is the graph that shows where my money goes.
 				
-    <div style="width: 600px; height: 400px;">
-      <cjs-doughnut dataset="someData" options="someOptions" segment-stroke-width="5"></cjs-doughnut>      
+    <div>
+      <canvas id="expenses" width="400" height="200"></canvas>
+    <script>
+		var pieData = [
+	{
+		value: 20,
+		color:"#878BB6"
+	},
+	{
+		value : 40,
+		color : "#4ACAB4"
+	},
+	{
+		value : 10,
+		color : "#FF8153"
+	},
+	{
+		value : 30,
+		color : "#FFEA88"
+	}
+];
+
+var pieOptions = {
+	segmentShowStroke : false,
+	animateScale : true
+}
+		var expenses = document.getElementById("expenses").getContext("2d");
+		new Chart(expenses).Pie(pieData, pieOptions);
+		
+		
+	</script>      
     </div>
+    
+    
+    
+    <div>
+      <canvas id="revenue" width="400" height="200"></canvas>
+    <script>
+		var pieData = [
+	{
+		value: 10,
+		color:"#878BB6"
+	},
+	{
+		value : 20,
+		color : "#4ACAB4"
+	},
+	{
+		value : 40,
+		color : "#FF8153"
+	},
+	{
+		value : 30,
+		color : "#FFEA88"
+	}
+];
+
+var pieOptions = {
+	segmentShowStroke : false,
+	animateScale : true
+}
+		var revenue = document.getElementById("revenue").getContext("2d");
+		new Chart(revenue).Pie(pieData, pieOptions);
+		
+		
+	</script>      
+    </div>
+    
 				
 						
 		</article>
