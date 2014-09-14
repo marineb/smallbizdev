@@ -161,3 +161,74 @@ canvas {
   border: 1px solid red;
   display: block;
 }
+.progress{
+	position:relative;
+	height:40px;
+	width:200px;
+	background-color:#878BB6;
+	box-shadow:0px 0px 5px #E4DADA;
+}
+#fill{
+	position:absolute;
+	height:40px;
+	width:150px;
+	background-color:green;
+	-webkit-animation: length 5s;	
+}
+#fill2{
+	position:absolute;
+	height:40px;
+	width:90px;
+	background-color:green;
+	-webkit-animation: length 5s;	
+}
+#percent{
+	position:absolute;
+	left:90px;
+	-webkit-animation: appear 6s;	
+}
+#percent2{
+	position:absolute;
+	left:150px;
+	-webkit-animation: appear 6s;	
+}
+
+
+@-webkit-keyframes length{
+	0%{
+		width:0px;	
+	}
+	100{
+		width:150px;	
+	}
+}
+@-webkit-keyframes length2{
+	0%{
+		width:0px;	
+	}
+	100{
+		width:150px;	
+	}
+}
+@-webkit-keyframes appear{
+	0%{
+		opacity:0;	
+	}
+	99%{
+		opacity:0;	
+	}
+	100{
+		opacity:1;	
+	}
+}
+@-webkit-keyframes appear2{
+	0%{
+		opacity:0;	
+	}
+	99%{
+		opacity:0;	
+	}
+	100{
+		opacity:1;	
+	}
+}
