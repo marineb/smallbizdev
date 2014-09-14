@@ -207,11 +207,7 @@ ul.menu a li, ul.menu a:hover li {
   color: white;
 }
 
-canvas {
-<<<<<<< HEAD
-  border: 1px solid red;
-  display: block;
-}
+
 .progress{
 	position:relative;
 	height:40px;
@@ -223,14 +219,14 @@ canvas {
 	position:absolute;
 	height:40px;
 	width:150px;
-	background-color:green;
+	background-color:#46BFBD;
 	-webkit-animation: length 5s;	
 }
 #fill2{
 	position:absolute;
 	height:40px;
 	width:90px;
-	background-color:green;
+	background-color:#46BFBD;
 	-webkit-animation: length 5s;	
 }
 #percent{
@@ -282,7 +278,8 @@ canvas {
 	100{
 		opacity:1;	
 	}
-=======
+}
+canvas {
   width: 144px !important;
   height: 72px !important;
   margin-left: -5px;
@@ -295,11 +292,10 @@ canvas {
   overflow: hidden;
   margin-left: -15px;
   margin-right: -15px;
-  margin-top: -15;
+  margin-top: -15px;
 }
 
 .home img {
   width: 100%;
-  margin-top: -15;
->>>>>>> 30597a7f3ed56b2b6c74da9ac53757262274e0d1
+  margin-top: -15px;
 }
