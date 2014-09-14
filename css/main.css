@@ -1,26 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #666;
+}
+
 ul {
   list-style: none;
   padding: 0;
 }
- 
-a {
-  
-}
+
 .month{
-	border:1px solid black;
-	border-right:none;
-	text-align:center;
-	font-size:15px;
-	border-bottom:none;
+  border:1px solid black;
+  border-right:none;
+  text-align:center;
+  font-size:15px;
+  border-bottom:none;
 }
+
+.calender {	
+  background-color:red;	
+}
+
+.start {
+  text-align:left;	
+}
+
+.end {
+  text-align:left;	
+}
+
+.wrapper {
+  background-color:red;	
+}
+
+.bottom .month {
+  border-bottom:1px solid black;	
+}
+.start {
+  margin-left:-10px;	
+}
+
+a {	
+  color: #fff;
+}
+
+a:hover {
+  color: #313c64;
+  background: #313c64;
+}
+
+.btn, a:visited, a:active {
+  background: #eb3156;
+  color: #fff;
+}
+<<<<<<< HEAD
 .month 
 .calender{
 	
 	background-color:red;	
+=======
+
+.btn-primary {
+  background: #eb3156;
+  color: #fff;
+>>>>>>> a5558efad1a30a429531f585d664d5f89edd3a52
 }
-.start{
-	text-align:left;	
+
+body {
+  background: #313c64;
+  color: #fff;
+  font-family: Helvetica;
+  padding: 0;
 }
+<<<<<<< HEAD
 .end{
 	text-align:left;
 	width:107px;	
@@ -33,10 +86,26 @@ a {
 *{
 	padding:0px;
 	margin:0px;	
+=======
+
+.element {
+  background: #00c3ff;
+  padding: 5%;
 }
-.bottom .month{
-	border-bottom:1px solid black;	
+
+.footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+>>>>>>> a5558efad1a30a429531f585d664d5f89edd3a52
 }
+
+li {
+    background: black;
+    height: 50px;
+}
+<<<<<<< HEAD
 .start{
 	margin-left:-5px; 
 	
@@ -61,4 +130,10 @@ a {
 .stretch{
 
 	 	
+=======
+
+canvas {
+  border: 1px solid red;
+  display: block;
+>>>>>>> a5558efad1a30a429531f585d664d5f89edd3a52
 }

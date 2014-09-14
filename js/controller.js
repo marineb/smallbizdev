@@ -1,9 +1,9 @@
-var myAppModule = angular.module('profitly', ['ngRoute']);
+var app = angular.module('profitly', ['ngRoute', 'chartjs']);
 
-function feelioRouteConfig($routeProvider, $locationProvider) {
+function profitlyRouteConfig($routeProvider, $locationProvider) {
   $routeProvider.
   when ('/', {
-    templateUrl: '/views/menu.html'
+    templateUrl: '/views/home.html'
   }).
  when ('/dashboard', {
     templateUrl: '/views/dashboard.html'
@@ -12,68 +12,62 @@ function feelioRouteConfig($routeProvider, $locationProvider) {
     aliases: ['cash'],
     templateUrl: '/views/cashflow.html'
   }).
+  when ('/menu', {
+    templateUrl: '/views/menu.html'
+  }).
    otherwise ({
     redirectTo: '/'
   });
   
   //$locationProvider.html5Mode(true);
-  
-  
-//  app.controller('userData', function(){
-//    this.users = users;
-//  });
-//
-//  var users = [
-//    {
-//      first: 'Julie',
-//      last: '',
-//      expenses: [
-//      {
-//	employees: 'Food Processing',
-//	day: 'Sundays',
-//	time: '8:30 PM',
-//	week: 'C'
-//      }],
-//      shifts: [
-//      {
-//	time: '1401669000000',
-//	status: 'default'
-//      },
-//      {
-//	time: '1404088200000',
-//	status: 'swap in progress'	
-//      },
-//      {
-//	time: '1406507400000',
-//	status: 'swapped'
-//      }
-//      ]
-//    },
-//    {
-//      first: 'John',
-//      last: 'Doe'
-//    }
-//  ];
-//  
+
 }
 
-myAppModule.controller('MainController', function($scope, $route, $routeParams, $location) {
+app.controller('MainController', function($scope, $route, $routeParams, $location) {
      $scope.$route = $route;
      $scope.$location = $location;
      $scope.$routeParams = $routeParams;
- })
+     
+ });
+
+
+app.controller('graph', function($scope) {
+  $scope.someData = {
+    labels: [
+      'Supply', 
+      'May', 
+      'Jun'
+    ],
+    datasets: [
+      {
+	data: [1, 7, 15, 19, 31, 40]
+      },
+      {
+	data: [6, 12, 18, 24, 30, 36]
+      }
+    ]
+  };
+
+  $scope.someOptions = {
+      segmentStrokeWidth: 20,
+      segmentStrokeColor: '#000'
+  };
+ });
+
+
+
 
 //console.log(route);
 //console.log(location);
 
-myAppModule.config(feelioRouteConfig);
+app.config(profitlyRouteConfig);
 
 // Make sure GA passes the right data
-myAppModule.run(function ($rootScope, $location) {
-    $rootScope.$on('$routeChangeSuccess', function(){
-      ga('send', 'pageview', $location.path());
-    });
-});
+//app.run(function ($rootScope, $location) {
+//    $rootScope.$on('$routeChangeSuccess', function(){
+//      ga('send', 'pageview', $location.path());
+//    });
+//});
 
 
 
