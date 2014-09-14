@@ -13,6 +13,7 @@ a {
 	font-size:15px;
 	border-bottom:none;
 }
+.month 
 .calender{
 	
 	background-color:red;	
@@ -24,12 +25,39 @@ a {
 	text-align:left;	
 }
 .wrapper{
-
-	background-color:red;	
+	position:relative;
+	left:0;
+	right:0;	
+}
+*{
+	padding:0px;
+	margin:0px;	
 }
 .bottom .month{
 	border-bottom:1px solid black;	
 }
 .start{
-	margin-left:-10px;	
+	margin-left:-5px; 
+	
+}
+.start p{
+	
+}
+
+.end{
+	 	
+}
+.pass{
+	color:#66cc00;
+}
+.fail{
+	color:red;
+}
+.month p{
+	border-bottom:1px solid black;
+		
+}
+.stretch{
+
+	 	
 }
