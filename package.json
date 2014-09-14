@@ -1,5 +1,5 @@
 {
-  "name": "small biz dev",
+  "name": "small-biz-dev",
   "version": "0.0.1",
   "description": "This example app is so cool.",
   "main": "js/main.js",
@@ -18,5 +18,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/marineb/smallbizdev"
-  }
+  },
+  "homepage": "https://github.com/marineb/smallbizdev"
 }
