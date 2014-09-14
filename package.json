@@ -2,7 +2,7 @@
   "name": "small-biz-dev",
   "version": "0.0.1",
   "description": "This example app is so cool.",
-  "main": "js/main.js",
+  "main": "js/controller.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
