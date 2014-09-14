@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/app'));
 
 app.get('/', function(req, res) {
   //res.send('Hello World!');
-  res.sendfile('./index.html');
+  res.sendfile('./app/index.html');
 });
 
 var port = Number(process.env.PORT || 5000);
