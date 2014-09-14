@@ -54,10 +54,6 @@ a .month:hover {
   background: #fafafa;
 }
 
-.dashboard {
-  margin-top: -20px;
-}
-
 .dashboard .row {	
   background: white;
   color: #333;
@@ -168,7 +164,7 @@ h4 span {
 }
 
 ul.menu {
-  margin: -20px -15px 0 -15px;
+  margin: 0 -15px 0 -15px;
   font-size: 20px;
 }
 
@@ -187,13 +183,34 @@ ul.menu a li:hover {
   color: white;
 }
 
+.detailsofcosts li {
+  padding-left: 10px;
+}
+
+.detailsofcosts span {
+  float: right;
+}
+
+h5 {
+  border-bottom: 1px #293255 dotted;
+}
+
+.goalpage,  {
+  background: white;
+}
+
+.center {
+  text-align: center;
+}
+
 ul.menu a li, ul.menu a:hover li {
   color: white;
 }
 
 canvas {
-  border: 1px solid red;
-  display: block;
+  width: 144px !important;
+  height: 72px !important;
+  margin-left: -5px;
 }
 
 /* Styles for home page image */
