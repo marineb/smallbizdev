@@ -1,89 +1,107 @@
 <section class="row">
 		
-		
-		<article ng-controller="graph" class="col-xs-12 col-md-offset-3 col-md-6">
-    <h4>Overview</h4>
-    This is the graph that shows where my money goes.
-				
-    <div>
-      <canvas id="expenses" width="400" height="200"></canvas>
-    <script>
-		var pieData = [
-	{
-		value: 20,
-		color:"#878BB6"
-	},
-	{
-		value : 40,
-		color : "#4ACAB4"
-	},
-	{
-		value : 10,
-		color : "#FF8153"
-	},
-	{
-		value : 30,
-		color : "#FFEA88"
-	}
-];
+    <article class="col-xs-12 col-md-offset-3 col-md-6">
+      <h4>Overview</h4>  
+    </article>
+    <article class="col-xs-6 col-md-offset-3 col-md-6 center">
+        <canvas id="expenses" width="200" height="100"></canvas>
+            <script>
+                        var pieData = [
+                {
+                        value: 20,
+                        color:"#878BB6"
+                },
+                {
+                        value : 40,
+                        color : "#4ACAB4"
+                },
+                {
+                        value : 10,
+                        color : "#FF8153"
+                },
+                {
+                        value : 30,
+                        color : "#FFEA88"
+                }
+        ];
+        var pieOptions = {
+                segmentShowStroke : false,
+                animateScale : true
+        }
+        var expenses = document.getElementById("expenses").getContext("2d");
+        new Chart(expenses).Pie(pieData, pieOptions);
+        </script>
+            
+    </article>
 
-var pieOptions = {
-	segmentShowStroke : false,
-	animateScale : true
-}
-		var expenses = document.getElementById("expenses").getContext("2d");
-		new Chart(expenses).Pie(pieData, pieOptions);
-		
-		
-	</script>      
-    </div>
-    
-    
-    
-    <div>
-      <canvas id="revenue" width="400" height="200"></canvas>
-    <script>
-		var pieData = [
-	{
-		value: 10,
-		color:"#878BB6"
-	},
-	{
-		value : 20,
-		color : "#4ACAB4"
-	},
-	{
-		value : 40,
-		color : "#FF8153"
-	},
-	{
-		value : 30,
-		color : "#FFEA88"
-	}
-];
-
-var pieOptions = {
-	segmentShowStroke : false,
-	animateScale : true
-}
-		var revenue = document.getElementById("revenue").getContext("2d");
-		new Chart(revenue).Pie(pieData, pieOptions);
-		
-		
-	</script>      
-    </div>
-    
-				
-						
-		</article>
+      <article class="col-xs-6 col-md-offset-3 col-md-6 center">
+        <canvas id="revenue" width="200" height="100"></canvas>
+        <script>
+          var pieData = [
+          {
+          value: 10,
+          color:"#878BB6"
+          },
+          {
+          value : 20,
+          color : "#4ACAB4"
+          },
+          {
+          value : 40,
+          color : "#FF8153"
+          },
+          {
+          value : 30,
+          color : "#FFEA88"
+          }
+          ];
   
- 
+          var pieOptions = {
+                  segmentShowStroke : false,
+                  animateScale : true
+          }
+                  var revenue = document.getElementById("revenue").getContext("2d");
+                  new Chart(revenue).Pie(pieData, pieOptions);
+          </script>      
+      </article>
+      
+      
 		
-		
-  <article class="col-sm-12 col-md-offset-3 col-md-6">
+</section>
+<section class="row center">
+    <article class="col-xs-6 col-md-offset-3 col-md-6">
+      Costs
+    </article>
+    <article class="col-xs-6 col-md-offset-3 col-md-6">
+      Revenues
+    </article>
+</section>
+<br>
+<section class="row">
+  <article class="col-sm-12 col-md-offset-3 col-md-6 detailsofcosts">
     <h4>Details</h4>
 
-    This is the detailed data                  
+    <h5>
+      Labor
+    </h5>
+    <ul>
+      <li>Waiters <span>$200,000</span></li>
+      <li>Accounting <span>$200</span></li>
+    </ul>
+    <h5>
+      Supply
+    </h5>
+    <ul>
+      <li>Coffee <span>$10,000</span></li>
+      <li>Milk <span>$2,000</span></li>
+    </ul>
+    <h5>
+      Utilities
+    </h5>
+    <ul>
+      <li>Internet <span>$100</span></li>
+      <li>Elelctricity <span>$500</span></li>
+    </ul>
   </article>
 		
 
