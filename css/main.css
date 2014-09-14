@@ -10,6 +10,37 @@ ul {
   padding: 0;
 }
 
+.month{
+  border:1px solid black;
+  border-right:none;
+  text-align:center;
+  font-size:15px;
+  border-bottom:none;
+}
+
+.calender {	
+  background-color:red;	
+}
+
+.start {
+  text-align:left;	
+}
+
+.end {
+  text-align:left;	
+}
+
+.wrapper {
+  background-color:red;	
+}
+
+.bottom .month {
+  border-bottom:1px solid black;	
+}
+.start {
+  margin-left:-10px;	
+}
+
 a {	
   color: #fff;
 }
