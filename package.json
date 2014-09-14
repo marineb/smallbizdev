@@ -1,0 +1,27 @@
+{
+  "name": "small-biz-dev",
+  "version": "0.0.1",
+  "description": "This example app is so cool.",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marineb/smallbizdev"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "Marine Boudeau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marineb/smallbizdev"
+  },
+  "homepage": "https://github.com/marineb/smallbizdev",
+  "dependencies": {
+    "express": "^4.9.0",
+    "logfmt": "^1.1.2"
+  }
+}

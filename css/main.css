@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 * {
 	box-sizing: border-box;
 }
+
 body {
 	background-color: #313c64;
 	font-size: 16px;
-	font-family: 'Ubuntu Condensed', sans-serif;
 	margin-top: 50px;
 }
 
@@ -26,20 +25,15 @@ nav li {
     background-size: cover;
     -o-background-size: cover;
 }
-/*.image-bg-fluid-height {
-	background: url("imgs/smallbusinessownercr.jpg") no-repeat center center scroll;
-	padding: 100px 0;
-}
 
-.image-bg-fixed-height {
-	background: url("imgs/smallbusinessownercr.jpg") no-repeat center center scroll;
-	padding: 450px;
-=======
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 body {
-  font-family: 'Lato', sans-serif;
   color: #666;
+  background: #313c64;
+  color: #fff;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  padding: 0;
 }
 
 ul {
@@ -47,21 +41,94 @@ ul {
   padding: 0;
 }
 
+a.logo, a.logo:hover {
+  color: white;
+}
+
+.year {
+  text-align: center;
+  font-size: 15px;
+  background: #009CCC;
+  color: white;
+  padding: 10px 0;
+}
+
+.month {
+  border: 1px solid #eee;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+       -o-transition: all .2s;
+	  transition: all .2s;
+}
+
+a .month:hover {
+  background: #fafafa;
+}
+
+.dashboard {
+  margin-top: -20px;
+}
+
+.dashboard .row {	
+  background: white;
+  color: #333;
+}
+
+.thelabel {
+  margin: 10px 0 0 0;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.profit {
+  margin: 0 0 10px 0;
+  color: #46BFBD;
+}
+
+.down {
+  color: #FDB45C;
+}
+
+.negative {
+  color: #F7464A;
+}
+
+.end {
+  text-align:left;	
+}
+
+.wrapper {
+  background-color:red;	
+}
+
+.bottom .month {
+  /*border-bottom:1px solid black;*/	
+}
+
 a {	
-  color: #fff;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+       -o-transition: all .2s;
+	  transition: all .2s;
 }
 
 a:hover {
-  color: #313c64;
-  background: #313c64;
+/*  color: #313c64;
+  background: #313c64;*/
+  text-decoration: none;
 }
 
-.btn, a:visited, a:active {
+.btn {
   background: #eb3156;
   color: #fff;
->>>>>>> FETCH_HEAD
 }
-*/
+h2 {
+  line-height: 36px;
+}
+
 .main {
 	background-image:url("../imgs/smallbusinessownercr.jpg");
 	background-size: 100%;
@@ -69,8 +136,6 @@ a:hover {
 	background-position: center;
 	height: 360px;
 	clear: both;
-
-<<<<<<< HEAD
 }
 
 .main-box {
@@ -126,25 +191,78 @@ footer {
 	width: 100%;
 	margin-top: 5%;
 	background-color: black;
+
+h4 {
+  margin: 20px 0 25px 0;
+  line-height: 25px;
+}
+
+h4 span {
+  border-bottom: dotted 1px white;
+}
+
+.btn {
+  background: #eb3156;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary {
+  background: #eb3156;
+  color: #fff;
+}
+
+.element {
+  background: #00c3ff;
+  padding: 5px 15px 10px 15px;
+  border: none;
+  border-radius: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2% 5%;
+  margin: 0;
+}
+
+ul.menu {
+  margin: -20px -15px 0 -15px;
+  font-size: 20px;
+}
+
+ul.menu a li {
+  padding: 25px 25px 22px 25px;
+  border-bottom: 1px solid #293255;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+       -o-transition: all .2s;
+	  transition: all .2s;
+}
+
+ul.menu a li:hover {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1); /*#009CCC #5b325e;*/
+  color: white;
+}
+
+ul.menu a li, ul.menu a:hover li {
+  color: white;
 }
 
 @media only screen and (min-width: 500px) {
-
    .section-box h2 { font-size: 2em; padding: 0% 20%;}
    .section-box img { height: 25%; width: 25%; margin-left: 38%}
-
-
 }
 
-.main-menu ul li{
-	height: 200px;
-	width: 100%;
-}
-=======
+  .main-menu ul li{
+  	height: 200px;
+  	width: 100%;
+  }
 
 
 canvas {
   border: 1px solid red;
   display: block;
 }
->>>>>>> FETCH_HEAD

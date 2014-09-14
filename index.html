@@ -14,25 +14,25 @@
     <meta property="og:description" content="" />
     
     <!--<base href="/" />-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/Chart.js"></script>
     <script src="js/lib/angular.min.js"></script>
-<!--    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1-beta.2/Chart.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>-->
+
 
     <script src="js/lib/angular-route.min.js"></script>
     <script src="js/lib/angular-chartjs.min.js"></script>
     <script src="js/controller.js"></script>
     
   </head>
-  <body ng-controller="MainController" class="container-fluid">
+  <body>
     
     <header ng-include src="'views/header.html'" class="home"></header>
 
-    <div class="wrapper" ng-view></div>
+    <div ng-controller="MainController" class="container-fluid" ng-view></div>
     
     <footer ng-include src="'views/footer.html'" class="home"></footer>
     
