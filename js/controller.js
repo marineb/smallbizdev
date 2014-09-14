@@ -3,7 +3,7 @@ var app = angular.module('profitly', ['ngRoute', 'chartjs']);
 function profitlyRouteConfig($routeProvider, $locationProvider) {
   $routeProvider.
   when ('/', {
-    templateUrl: '/views/menu.html'
+    templateUrl: '/views/home.html'
   }).
  when ('/dashboard', {
     templateUrl: '/views/dashboard.html'
@@ -11,6 +11,9 @@ function profitlyRouteConfig($routeProvider, $locationProvider) {
  when ('/cashflow', {
     aliases: ['cash'],
     templateUrl: '/views/cashflow.html'
+  }).
+  when ('/menu', {
+    templateUrl: '/views/menu.html'
   }).
    otherwise ({
     redirectTo: '/'
