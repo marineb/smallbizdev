@@ -62,11 +62,11 @@ a .month:hover {
 }
 
 .down {
-  color: orange;
+  color: #FDB45C;
 }
 
 .negative {
-  color: red;
+  color: #F7464A;
 }
 
 .end {
@@ -94,8 +94,13 @@ a:hover {
   text-decoration: none;
 }
 
+h2 {
+  line-height: 34px;
+}
+
 h4 {
-  margin: 20px 0 25px 0; 
+  margin: 20px 0 25px 0;
+  line-height: 23px;
 }
 
 h4 span {
@@ -144,7 +149,7 @@ ul.menu a li {
 
 ul.menu a li:hover {
   text-decoration: none;
-  background: #5b325e;
+  background: rgba(255, 255, 255, 0.1); /*#009CCC #5b325e;*/
   color: white;
 }
 
