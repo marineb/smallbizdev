@@ -14,20 +14,59 @@ ul {
   padding: 0;
 }
 
-.month{
-  border:1px solid black;
-  border-right:none;
-  text-align:center;
-  font-size:15px;
-  border-bottom:none;
+a.logo, a.logo:hover {
+  color: white;
 }
 
-.calender {	
-  background-color:red;	
+.year {
+  text-align: center;
+  font-size: 15px;
+  background: #009CCC;
+  color: white;
+  padding: 10px 0;
 }
 
-.start {
-  text-align:left;	
+.month {
+  border: 1px solid #eee;
+  border-right: none;
+  border-bottom: none;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+       -o-transition: all .2s;
+	  transition: all .2s;
+}
+
+a .month:hover {
+  background: #fafafa;
+}
+
+.dashboard {
+  margin-top: -20px;
+}
+
+.dashboard .row {	
+  background: white;
+  color: #333;
+}
+
+.thelabel {
+  margin: 10px 0 0 0;
+  color: #999;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.profit {
+  margin: 0 0 10px 0;
+  color: #46BFBD;
+}
+
+.down {
+  color: orange;
+}
+
+.negative {
+  color: red;
 }
 
 .end {
@@ -39,14 +78,10 @@ ul {
 }
 
 .bottom .month {
-  border-bottom:1px solid black;	
-}
-.start {
-  margin-left:-10px;	
+  /*border-bottom:1px solid black;*/	
 }
 
 a {	
-  color: #fff;
   -webkit-transition: all .2s;
      -moz-transition: all .2s;
        -o-transition: all .2s;
@@ -59,7 +94,15 @@ a:hover {
   text-decoration: none;
 }
 
-.btn, a:visited, a:active {
+h4 {
+  margin: 20px 0 25px 0; 
+}
+
+h4 span {
+  border-bottom: dotted 1px white;
+}
+
+.btn {
   background: #eb3156;
   color: #fff;
   border: none;
@@ -74,6 +117,7 @@ a:hover {
   background: #00c3ff;
   padding: 5%;
   border: none;
+  border-radius: 0;
 }
 
 .footer {
@@ -90,7 +134,7 @@ ul.menu {
 }
 
 ul.menu a li {
-  padding: 25px;
+  padding: 25px 25px 22px 25px;
   border-bottom: 1px solid #293255;
   -webkit-transition: all .2s;
      -moz-transition: all .2s;
