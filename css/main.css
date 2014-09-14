@@ -1,38 +1,11 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
-	background-color: #313c64;
-	font-size: 16px;
-	margin-top: 50px;
-}
-
-.container-fluid {
-		padding: 0;
-}
-
-nav li {
-	display: inline;
-	float: left;
-	
-}
-
-.image-bg-fluid-height, .image-bg-fixed-height {
-	text-align: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 body {
+  font-family: 'Lato', sans-serif;
   color: #666;
   background: #313c64;
   color: #fff;
-  font-family: 'Ubuntu Condensed', sans-serif;
+  font-family: Helvetica;
   padding: 0;
 }
 
@@ -121,76 +94,9 @@ a:hover {
   text-decoration: none;
 }
 
-.btn {
-  background: #eb3156;
-  color: #fff;
-}
 h2 {
   line-height: 36px;
 }
-
-.main {
-	background-image:url("../imgs/smallbusinessownercr.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 360px;
-	clear: both;
-}
-
-.main-box {
-	background-color: rgba(255,255,255,0.65);
-	float: right;
-	margin-right: 5%;
-	margin-left: 60%;
-	margin-bottom: 5%;
-	margin-top: 5%;;
-	padding: 3%;
-}
-
-.main-box h2 {
-	font-family: 'Ubuntu Condensed', sans-serif;
-	font-size: 1.5em;
-	text-align: left;
-	margin-bottom: 15%;
-}
-
-.main-box a {
-	padding: 6%;
-	background: #eb3156;
-	color: #ffffff;
-	font-size: 1.2em;
-	border-radius: 10%
-}
-
-.section-box {
-	background-color: rgba(255,255,255,0.65);
-	margin-right: 5%;
-	margin-bottom: 5%;
-	margin-left: 25%;
-	margin-top: 2%;
-	padding: 3%;
-	width: 50%;
-	display: block;
-	font-size: .75em;
-}
-
-.section-box h2 {
-	font-size: 1.5em;
-	font-family: 'Ubuntu Condensed', sans-serif;
-}
-.section-box img {
-	padding-bottom: 2%;
-	width: 35%;
-	height: 35%;
-	margin-left: 30%;
-}
-
-footer {
-	padding: 5%;
-	width: 100%;
-	margin-top: 5%;
-	background-color: black;
 
 h4 {
   margin: 20px 0 25px 0;
@@ -250,17 +156,6 @@ ul.menu a li:hover {
 ul.menu a li, ul.menu a:hover li {
   color: white;
 }
-
-@media only screen and (min-width: 500px) {
-   .section-box h2 { font-size: 2em; padding: 0% 20%;}
-   .section-box img { height: 25%; width: 25%; margin-left: 38%}
-}
-
-  .main-menu ul li{
-  	height: 200px;
-  	width: 100%;
-  }
-
 
 canvas {
   border: 1px solid red;
