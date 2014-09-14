@@ -15,6 +15,12 @@ function profitlyRouteConfig($routeProvider, $locationProvider) {
   when ('/menu', {
     templateUrl: '/views/menu.html'
   }).
+  when ('/smart', {
+    templateUrl: '/views/smart.html'
+  }).
+  when ('/goals', {
+    templateUrl: '/views/goals.html'
+  }).
    otherwise ({
     redirectTo: '/'
   });

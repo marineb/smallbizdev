@@ -1,6 +1,6 @@
 {
-  "name": "node-example",
-  "version": "0.0.0",
+  "name": "small-biz-dev",
+  "version": "0.0.1",
   "description": "This example app is so cool.",
   "main": "web.js",
   "scripts": {
@@ -18,5 +18,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/marineb/smallbizdev"
+  },
+  "homepage": "https://github.com/marineb/smallbizdev",
+  "dependencies": {
+    "express": "^4.9.0",
+    "logfmt": "^1.1.2"
   }
 }

@@ -95,12 +95,12 @@ a:hover {
 }
 
 h2 {
-  line-height: 34px;
+  line-height: 36px;
 }
 
 h4 {
   margin: 20px 0 25px 0;
-  line-height: 23px;
+  line-height: 25px;
 }
 
 h4 span {
@@ -120,7 +120,7 @@ h4 span {
 
 .element {
   background: #00c3ff;
-  padding: 5%;
+  padding: 5px 15px 10px 15px;
   border: none;
   border-radius: 0;
 }
