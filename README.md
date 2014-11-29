@@ -16,3 +16,4 @@ A concept for the CapitalOne SmallBizDev Hackathon in September 2014. Profit.ly 
 
 <h4>Photos</h4>
 Our team brainstorming. 
+<img src="https://raw.githubusercontent.com/marineb/smallbizdev/master/imgs/atwork.jpg" />
